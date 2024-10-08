@@ -58,6 +58,14 @@ The final product of this project compares two models:
 
 **Metric Evaluation**: The embedded model achieved a higher R² score of 0.316, compared to 0.154 for the encoded model. This indicates that the embedded model explains a greater proportion of the variance in the target variable, suggesting that using sentence embeddings for product names leads to a better overall fit and more accurate predictions
 Therefore, although the difference between the two models on **test data** is small, there was a notable improvement when the **Embedded Model** was used on **completely new data** scraped directly from Amazon.
+### Tab Transformer Using Label Encoder
+![5bbc72ee-87e7-4434-b30f-01c45491ac13](https://github.com/user-attachments/assets/4dd13424-4b4a-4cca-9e9d-1e27e9de0678)
+
+### Tab Transformer Using Sentence Transformer Embeddings
+![c72d8cc4-ae3f-4a46-bbad-049e45151d60](https://github.com/user-attachments/assets/bb9fcb03-c92d-4606-9276-dc4690f5aa82)
+
+The graphs clearly show that the model using embeddings captures fluctuations in the data much more effectively. While the metrics provide an overall summary, the visuals tell a more detailed story, highlighting where the models differ, especially in handling a wide range of numerical data.
+
 
 ## Streamlit App Overview
 Alongside model training, I created a **Streamlit web app** that allows users to input an **Amazon product URL** and get a predicted discount percentage along with a confidence score. This app interacts with the **embedded model** and performs **real-time scraping** of product data.
@@ -68,6 +76,10 @@ Alongside model training, I created a **Streamlit web app** that allows users to
 - **Confidence Score**: The app shows how confident the model is in its predictions, calculated based on the variability of the prediction outputs.
 
 When you clone the repo, you can easily use the web app by inserting an Amazon link. The code scrapes the appropriate data, feeds it to the model, and returns a **predicted discount** and a **confidence score**.
+
+![Screenshot 2024-10-07 at 3 56 13 PM](https://github.com/user-attachments/assets/26362d10-6539-408b-9b8d-f14973ca0597)
+
+
 
 ## Conclusion
 This project highlights the **power of TabTransformer** models in handling different data types and achieving great **MSE** and **MAE** scores. It also underscores the importance of **data quality**, feature selection, and **embedding techniques** in improving prediction results. More importantly, it illustrates how **current, live data** can influence the model's performance, and the importance of adapting models to handle unseen and real-time data.
