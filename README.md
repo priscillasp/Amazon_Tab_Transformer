@@ -1,7 +1,7 @@
 # Amazon Discount Prediction AI Model
 
 ## Project Overview
-This project set out to build a model that predicts **discount percentages** for Amazon products. The initial goal was to use **TabTransformer**, an AI model that learns from both **categorical** and **numerical data**, to predict **new prices after discount**. However, after experimenting with the data and debugging through various stages, I shifted focus to predicting the **discount percentage**, which provided better results.
+This project set out to build a model that predicts **discount percentages** for Amazon products. The goal was to use **TabTransformer**, an AI model that learns from both categorical and numerical data, to predict the discount percentage for an Amazon product when user gives web link to product.
 
 The project involved:
 - **Data annotation** and careful **feature selection**.
